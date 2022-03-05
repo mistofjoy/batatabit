@@ -1,0 +1,19 @@
+{
+  "name": "batatabit",
+  "version": "0.0.1",
+  "description": "A school project where I attempt to create a landing page from a wireframe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mistofjoy/batatabit.git"
+  },
+  "author": "Jhonkar Sufia <jhonkar.sufia@mistofjoy.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mistofjoy/batatabit/issues"
+  },
+  "homepage": "https://github.com/mistofjoy/batatabit#readme"
+}
