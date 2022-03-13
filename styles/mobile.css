@@ -93,6 +93,7 @@ html {
     box-shadow: 0 0.2rem 0.5rem var(--gray);
     border: none;
     border-radius: 0.7rem;
+    text-decoration: none;
 }
 
 .divider-button__header-main > p {
