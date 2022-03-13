@@ -19,11 +19,11 @@
             <h1 class="header__title">La próxima revolución en el intercambio de criptomonedas</h1>
             <p class="header__text">Batatabit te ayuda a navegar entre los diferentes precios y tendencias.</p>
         </header>
-        <button class="divider-button__header-main">
-            <p>Conoce nuestros planes</p>
-            <img src="./assets/icons/mdi_keyboard_arrow_down.svg" alt="flecha hacia abajo" />
-        </button>
-        <main>
+        <main class="main">
+            <button class="divider-button__header-main">
+                <p>Conoce nuestros planes</p>
+                <img src="./assets/icons/mdi_keyboard_arrow_down.svg" alt="flecha hacia abajo" />
+            </button>
             <section class="exchange-rates">
                 <picture class="bitcoin">
                     <img src="./assets/img/Bitcoin.svg" alt="referencia a la blockchain de bitcoin" />
@@ -31,32 +31,32 @@
                 <h1 class="exchange-rates__title">Visibilizamos todas las tasas de cambio.</h1>
                 <p class="exchange-rates__text">Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.</p>
                 <div class="exchange-rates__cards">
-                    <div class="cards__monedas">
+                    <div class="cards__monedas" id="exchangeMonedas">
                         <h2 class="cards__monedas--title">Monedas</h2>
                         <div class="cards__monedas--grid">
-                            <div class="monedas-grid__bitcoin--name">Bitcoin</div>
-                            <div class="monedas-grid__bitcoin--value">
+                            <div class="monedas-grid__name">Bitcoin</div>
+                            <div class="monedas-grid__value">
                                 <p>$ 1.96</p>
                                 <img 
                                     src="./assets/icons/trending-down.svg" 
                                     alt="moneda en descenso" />
                             </div>
-                            <div class="monedas-grid__ethereum--name">Ethereum</div>
-                            <div class="monedas-grid__ethereum--value">
+                            <div class="monedas-grid__name">Ethereum</div>
+                            <div class="monedas-grid__value">
                                 <p>$ 0.07</p>
                                 <img 
                                     src="./assets/icons/trending-up.svg" 
                                     alt="moneda en ascenso" />
                             </div>
-                            <div class="monedas-grid__ripple--name">Ripple</div>
-                            <div class="monedas-grid__ripple--value">
+                            <div class="monedas-grid__name">Ripple</div>
+                            <div class="monedas-grid__value">
                                 <p>$ 2.15</p>
                                 <img 
                                     src="./assets/icons/trending-down.svg" 
                                     alt="moneda en descenso" />
                             </div>
-                            <div class="monedas-grid__stellar--name">Stellar</div>
-                            <div class="monedas-grid__stellar--value">
+                            <div class="monedas-grid__name">Stellar</div>
+                            <div class="monedas-grid__value">
                                 <p>$ 4.96</p>
                                 <img 
                                     src="./assets/icons/trending-down.svg" 
@@ -65,23 +65,23 @@
                         </div>
                         <p class="cards__monedas--update">Valores en <strong>$ USD</strong></p>
                     </div>
-                    <picture>
+                    <picture class="cards__arrows--right" id="exchangeRightArrow">
                         <img src="./assets/icons/mdi_keyboard_arrow_right.svg" alt="Desplegar a la derecha" />
                     </picture>
-                    <picture>
+                    <picture class="cards__arrows--left" id="exchangeLeftArrow">
                         <img src="./assets/icons/mdi_keyboard_arrow_left.svg" alt="Desplegar a la izquierda" />
                     </picture>
                     <div class="cards__comisiones">
                         <h2 class="cards__comisiones--title">Comisiones</h2>
                         <div class="cards__comisiones--grid">
-                            <div class="comisiones-grid__bitrade--name">Bitrade</div>
-                            <div class="comisiones-grid__bitrade--value">$ 12.96</div>
-                            <div class="comisiones-grid__Bitpreco--name">Bitpreco</div>
-                            <div class="comisiones-grid__Bitpreco--value">$ 13.07</div>
-                            <div class="comisiones-grid__novadax--name">Novadax</div>
-                            <div class="comisiones-grid__novadax--value">$ 13.15</div>
-                            <div class="comisiones-grid__coinext--name">Coinext</div>
-                            <div class="comisiones-grid__coinext--value">$ 14.96</div>
+                            <div class="comisiones-grid__name">Bitrade</div>
+                            <div class="comisiones-grid__value">$ 12.96</div>
+                            <div class="comisiones-grid__name">Bitpreco</div>
+                            <div class="comisiones-grid__value">$ 13.07</div>
+                            <div class="comisiones-grid__name">Novadax</div>
+                            <div class="comisiones-grid__value">$ 13.15</div>
+                            <div class="comisiones-grid__name">Coinext</div>
+                            <div class="comisiones-grid__value">$ 14.96</div>
                         </div>
                         <p class="cards__comisiones--update">Valores en <strong>$ USD</strong></p>
                     </div>

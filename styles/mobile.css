@@ -36,6 +36,12 @@ html {
     font-family: 'Inter', sans-serif;
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+    background: var(--off-white);
+}
+
 /*HEADER*/
 .header {
     display: flex;
@@ -75,7 +81,7 @@ html {
 /*BUTTON BETWEEN HEADER AND MAIN*/
 .divider-button__header-main {
     position: relative;
-    bottom: 3.5vh;
+    bottom: 2.4rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -100,4 +106,115 @@ html {
 
 .divider-button__header-main > img {
     width: 2.4rem;
+}
+
+/*EXCHANGE RATES SECTION*/
+.exchange-rates {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.bitcoin {
+    width: 65vw;
+    max-width: 280px;
+    margin: 0 auto 0 auto;
+}
+
+.bitcoin > img {
+    width: 100%;
+}
+
+.exchange-rates__title {
+    width: auto;
+    max-width: 85vw;
+    text-align: center;
+    font-size: 2.4rem;
+    color: var(--warm-black);
+}
+
+.exchange-rates__text {
+    width: auto;
+    max-width: 85vw;
+    text-align: center;
+    font-size: 1.4rem;
+    color: var(--gray);
+}
+
+.exchange-rates__cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards__monedas,
+.cards__comisiones {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cards__monedas--title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--bitcoin-orange);
+}
+
+.cards__comisiones--title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--secondary-blue);
+}
+
+.cards__monedas--grid,
+.cards__comisiones--grid {
+    display: grid;
+    grid-template-columns: repeat( 2 , 120px);
+    gap: 2px;
+    font-size: 1.6rem;
+    font-family: var(--font-family-cards);
+    font-weight: 500;
+    color: var(--gray);
+}
+
+.cards__monedas--grid > *,
+.cards__comisiones--grid > * {
+    background-color: var(--white);
+    padding: 0.8rem;
+}
+
+.monedas-grid__value,
+.comisiones-grid__value {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-weight: 400;
+}
+
+.cards__monedas--update {
+    padding: 0.6rem;
+    background-color: var(--soft-orange);
+    font-family: var(--font-family-cards);
+    font-weight: 400;
+    font-size: 1.2rem;
+    border-radius: 0.6rem;
+}
+
+.cards__monedas--update > strong {
+    font-weight: 700;
+}
+
+.cards__comisiones--update {
+    padding: 0.6rem;
+    background-color: var(--soft-blue);
+    font-family: var(--font-family-cards);
+    font-weight: 400;
+    font-size: 1.2rem;
+    border-radius: 0.6rem;
+}
+
+.cards__comisiones--update > strong {
+    font-weight: 700;
 }
