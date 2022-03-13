@@ -115,6 +115,7 @@ html {
     flex-flow: column nowrap;
     align-items: center;
     justify-content: space-evenly;
+    height: 100vh;
 }
 
 .bitcoin {
@@ -145,16 +146,34 @@ html {
 
 .exchange-rates__cards {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
     align-items: center;
+    width: 85vw;
+    /*overflow-x: auto;*/
 }
 
 .cards__monedas,
 .cards__comisiones {
     display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.cards__monedas--info,
+.cards__comisiones--info {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
+    scroll-snap-align: center;
+    gap: 1.2rem;
+}
+
+.cards__arrows--right:hover,
+.cards__arrows--left:hover {
+    cursor: pointer;
 }
 
 .cards__monedas--title {
@@ -218,4 +237,16 @@ html {
 
 .cards__comisiones--update > strong {
     font-weight: 700;
+}
+
+/*EXCHANGE CARDS VISIBILITY*/
+
+.cards__monedas {
+    transition: visibility .5s;
+}
+
+.cards__comisiones {
+    visibility: hidden;
+    display: none;
+    transition-timing-function: ease-in;
 }
