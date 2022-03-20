@@ -115,7 +115,7 @@ html {
     flex-flow: column nowrap;
     align-items: center;
     justify-content: space-evenly;
-    /*min-height: fit-content;*/
+    min-height: 670px;
     height: 100vh;
 }
 
@@ -249,9 +249,8 @@ html {
 .cards__comisiones {
     z-index: 1;
     transition: 1s;
-    /*visibility: hidden;*/
     opacity: 0;
     transform: translateX(30vw);
-    display: none;
-    /*transition-timing-function: ease-in;*/
+    display: flex;
+    position: absolute;
 }
