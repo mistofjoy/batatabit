@@ -115,6 +115,7 @@ html {
     flex-flow: column nowrap;
     align-items: center;
     justify-content: space-evenly;
+    /*min-height: fit-content;*/
     height: 100vh;
 }
 
@@ -150,7 +151,6 @@ html {
     justify-content: space-evenly;
     align-items: center;
     width: 85vw;
-    /*overflow-x: auto;*/
 }
 
 .cards__monedas,
@@ -242,11 +242,16 @@ html {
 /*EXCHANGE CARDS VISIBILITY*/
 
 .cards__monedas {
-    transition: visibility .5s;
+    transition: 1s;
+    z-index: 2;
 }
 
 .cards__comisiones {
-    visibility: hidden;
+    z-index: 1;
+    transition: 1s;
+    /*visibility: hidden;*/
+    opacity: 0;
+    transform: translateX(30vw);
     display: none;
-    transition-timing-function: ease-in;
+    /*transition-timing-function: ease-in;*/
 }
