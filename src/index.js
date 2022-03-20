@@ -12,9 +12,13 @@ const showComisiones = () => {
     monedas.style.position      = "absolute";
     monedas.style.zIndex        = "1";
     comisiones.style.zIndex     = "2";
+    /*
+    // For some reason, this transition often shifts the vertical scroll a little... This was a measure for correcting that, but it got unnecessary as I added more sections.
+    // I'll leave it here for further reference.
     ( window.innerHeight < 700 ) 
         ? exchangeRatesTitle.scrollIntoView()
         : exchangeRates.scrollIntoView();
+    */
     setTimeout(
         () => {
             comisiones.style.transform  = "none";
@@ -31,12 +35,15 @@ const showMonedas = () => {
     comisiones.style.position      = "absolute";
     comisiones.style.zIndex        = "1";
     monedas.style.zIndex           = "2";
+    /*
+    // For some reason, this transition often shifts the vertical scroll a little... This was a measure for correcting that, but it got unnecessary as I added more sections.
+    // I'll leave it here for further reference.
     ( window.innerHeight < 700 ) 
         ? exchangeRatesTitle.scrollIntoView()
         : exchangeRates.scrollIntoView();
+    */
     setTimeout(
         () => {
-            //comisiones.style.display = "none";
             monedas.style.transform  = "none";
             monedas.style.opacity    = "1";
         }

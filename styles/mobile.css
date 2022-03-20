@@ -40,6 +40,7 @@ html {
     display: flex;
     flex-direction: column;
     background: var(--off-white);
+    scroll-snap-type: proximity;
 }
 
 /*HEADER*/
@@ -115,7 +116,7 @@ html {
     flex-flow: column nowrap;
     align-items: center;
     justify-content: space-evenly;
-    min-height: 670px;
+    min-height: 680px;
     height: 100vh;
 }
 
@@ -253,4 +254,52 @@ html {
     transform: translateX(30vw);
     display: flex;
     position: absolute;
+}
+
+/*ADDED VALUE SECTION*/
+.added-value {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: auto;
+    width: 100vw;
+    padding: 0 7.5vw;
+    height: 100vh;
+    background-color: var(--warm-black);
+    color: var(--white);
+    font-weight: 700;
+}
+
+.added-value > h2 {
+    font-size: 2.4rem;
+    text-align: center;
+    margin-top: 2.4rem;
+}
+
+.added-value h3 {
+    font-size: 1.8rem;
+}
+
+.added-value p {
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: var(--gray);
+}
+
+.added-value > p {
+    text-align: center;
+}
+
+.added-value__cards {
+    display: grid;
+    grid-template-columns: repeat( auto-fit , minmax( 300px , max-content ) );
+    gap: 1.4rem;
+    margin-bottom: 2.4rem;
+}
+
+.added-value__cards > * {
+    padding: 1.4rem;
+    background-color: var(--softer-black);
+    border-radius: 1.4rem;
 }
