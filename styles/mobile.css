@@ -326,3 +326,119 @@ html {
     text-align: center;
     margin-top: 25%;
 }
+
+/*PLANS*/
+
+.plans {
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: max-content;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 85vw;
+    margin: 0 auto 2.4rem auto;
+}
+
+.plans h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 2.4rem;
+}
+
+.plans > p {
+    color: var(--gray);
+    margin: 1.4rem 0;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2.4rem;
+}
+
+.plans__paid-options {
+    display: grid;
+    grid-template-columns: repeat( auto-fit , 190px );
+    grid-auto-rows: 247px;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4rem;
+    width: 100%;
+}
+
+.plans__paid-options > article {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 247px;
+    padding: 1.6rem;
+    font-family: var(--font-family-cards);
+    text-align: center;
+    color: var(--gray);
+    font-size: 1.2rem;
+    background-color: var(--white);
+    border-radius: 6px;
+}
+
+.plans__paid-options > .plans__paid-options--yearly-option {
+    justify-content: flex-end;
+    gap: 14px;
+    padding-bottom: 2.8rem;
+    border: solid 2px var(--bitcoin-orange);
+}
+
+.plans__paid-options h3 {
+    font-family: var(--font-family-standard);
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: var(--warm-black);
+}
+
+.price {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    color: var(--warm-black);
+    font-weight: 700;
+    font-size: 5.2rem;
+}
+
+.price > span {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.price > p {
+    line-height: 5.2rem;
+}
+
+.recommended {
+    position: relative;
+    justify-self: flex-start;
+    padding: 0.6rem;
+    font-weight: 700;
+    color: var(--white);
+    background-color: var(--bitcoin-orange);
+    border-radius: 6px;
+}
+
+.cards__choose-plan {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--warm-black);
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: var(--font-family-standard);
+    background-color: var(--off-white);
+    border: solid 2px var(--bitcoin-orange);
+    border-radius: 6px;
+}
+
+.cards__choose-plan > span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
