@@ -377,6 +377,7 @@ html {
     font-size: 1.2rem;
     background-color: var(--white);
     border-radius: 6px;
+    box-shadow: 0 0.2rem 0.5rem var(--gray);
 }
 
 .plans__paid-options > .plans__paid-options--yearly-option {
@@ -441,4 +442,40 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/*FAQ*/
+
+.plans__faq {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    height: auto;
+    margin-bottom: 24px;
+    width: 85vw;
+}
+
+.plans__faq article {
+    width: 100%;
+}
+
+.plans__faq div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.plans__faq p {
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: var(--gray);
+    display: none;
+}
+
+.plans__faq--pregunta span {
+    transition: transform 0.5s ease;
 }

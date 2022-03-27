@@ -53,3 +53,38 @@ const showMonedas = () => {
 
 exchangeRightArrow.addEventListener( "click" , showComisiones );
 exchangeLefttArrow.addEventListener( "click" , showMonedas    );
+
+//FAQ SECTION
+let questionA      = document.getElementById( "questionA"     );
+let questionB      = document.getElementById( "questionB"     );
+let questionC      = document.getElementById( "questionC"     );
+let questionD      = document.getElementById( "questionD"     );
+let answerA        = document.getElementById( "answerA"       );
+let answerB        = document.getElementById( "answerB"       );
+let answerC        = document.getElementById( "answerC"       );
+let answerD        = document.getElementById( "answerD"       );
+let answerArrowA   = document.getElementById( "answerArrowA" );
+let answerArrowB   = document.getElementById( "answerArrowB"  );
+let answerArrowC   = document.getElementById( "answerArrowC"  );
+let answerArrowD   = document.getElementById( "answerArrowD"  );
+
+const showAnswers = ( answer , answerArrow ) => {
+    if ( answer.style.display == "block" ) {
+        answer.style.display         = "none";
+        answerArrow.style.transform  = "none";
+    }
+    else {
+        answer.style.display         = "block";
+        answerArrow.style.transform  = "rotate(180deg)";
+    }
+}
+
+const showAnswerA = () => { showAnswers ( answerA , answerArrowA ); }
+const showAnswerB = () => { showAnswers ( answerB , answerArrowB ); }
+const showAnswerC = () => { showAnswers ( answerC , answerArrowC ); }
+const showAnswerD = () => { showAnswers ( answerD , answerArrowD ); }
+
+questionA.addEventListener( "click" , showAnswerA );
+questionB.addEventListener( "click" , showAnswerB );
+questionC.addEventListener( "click" , showAnswerC );
+questionD.addEventListener( "click" , showAnswerD );
