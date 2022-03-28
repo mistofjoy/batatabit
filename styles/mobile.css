@@ -479,3 +479,37 @@ html {
 .plans__faq--pregunta span {
     transition: transform 0.5s ease;
 }
+
+/*FOOTER*/
+footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 30vh;
+    width: 100%;
+    padding: 0 7.5vw;
+    background-color: var(--bitcoin-orange);
+    color: var(--white);
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer__links > a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 2rem;
+}
+
+.footer__logo {
+    height: 78px;
+}
+
+.footer__logo > img {
+    height: 100%;
+}
