@@ -9,3 +9,16 @@
 .cards__arrows--left {
     display: none;
 }
+
+.plans__faq {
+    max-width: 632px;
+}
+
+.added-value {
+    max-height: 460px;
+}
+
+.exchange-rates__cards,
+.exchange-rates__text {
+    max-width: 632px;
+}
