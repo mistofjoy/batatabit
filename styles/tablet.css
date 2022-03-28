@@ -1,0 +1,11 @@
+.cards__comisiones {
+    opacity: 1;
+    transform: none;
+    display: flex;
+    position: static;
+}
+
+.cards__arrows--right,
+.cards__arrows--left {
+    display: none;
+}

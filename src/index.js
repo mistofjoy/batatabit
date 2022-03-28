@@ -51,8 +51,23 @@ const showMonedas = () => {
     )
 }
 
-exchangeRightArrow.addEventListener( "click" , showComisiones );
-exchangeLefttArrow.addEventListener( "click" , showMonedas    );
+const showBothCards = () => {
+    if ( screen.width >= 600 ) {
+        comisiones.style.position   = "static";
+        comisiones.style.transform  = "none";
+        comisiones.style.opacity    = "1";
+        monedas.style.position      = "static";
+        monedas.style.transform     = "none";
+        monedas.style.opacity       = "1";
+    }
+    else {
+        showMonedas();
+    }
+}
+
+exchangeRightArrow.addEventListener( "click" , showComisiones  );
+exchangeLefttArrow.addEventListener( "click" , showMonedas     );
+screen.orientation.onchange = showBothCards ;
 
 //FAQ SECTION
 let questionA      = document.getElementById( "questionA"     );
